@@ -1,0 +1,365 @@
+header{
+    background-image: url(banner1.jpg);
+    background-repeat: no-repeat;
+    background-size:100% 650px;
+    height: 650px;
+    width: 100%;
+
+   
+    
+}
+nav{  
+    position:sticky;
+    top: 0px;;
+    height: 55px;
+    width: 100%;
+    background-color: #0008;
+    float: right;
+    margin: 0;
+    padding-top: 10px;
+}
+
+nav ul li a {  
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+nav{
+    
+    box-shadow: 10px 10px 10px 17px #0008;
+   
+}
+
+
+nav ul{
+    display: flex; 
+    position:absolute;
+    top:0px;
+    left: 420px;
+    color: white;
+    width: 880px;
+    text-decoration: none;
+    padding-top: 15px;
+}
+
+nav img{
+    position: absolute;
+    top: 10px;
+    left: 35px;
+}
+
+nav ul li{
+    padding:0 20px 0 12px;
+    text-decoration: none;
+    display:inline;
+    text-align: center;
+    font-family: sans-serif;
+}
+a.active,a:hover{
+     color: #57b952;
+}
+
+body{
+    margin: 0;
+     background-image:url('download3.png');
+    background-color: beige;
+    background-attachment: fixed;
+    min-width: 800px;
+}
+
+.aboutninos{
+    text-align: center;
+    min-height: 350px;
+    background-color: white;
+}
+h1{
+    padding-bottom: 20px;
+    color: limegreen;
+}
+.spantext{
+    color: #EE559E
+}
+
+.onlytext{
+    font-family:sans-serif;
+    width: 100%;
+    padding-top: 50px;
+    text-align: center;
+}
+.onlytext1{
+    font-family:sans-serif;
+    width: 100%;
+    text-align: center;
+}
+.aboutninos-text{
+    position: relative;
+    left: 280px; 
+    font-size: 1.2em;
+    max-width: 800px;;
+}
+.aboutninos-img1{
+    width: 230;
+    position: absolute;
+    left: 20px;
+}
+.aboutninos-img2{
+    width: 230;
+    position: absolute;
+    right: 0px;
+    transform: rotate(270deg)
+}
+.ourprograms{
+    width: 100%;
+    text-align: center;
+    font-family:monospace;
+    padding-top: 60px;
+        
+}
+.ourprograms table{
+    width: 100%;
+    text-align: center;
+    border-spacing: 50px; 
+}
+
+.imgdiscription{
+    padding: 15px;
+    font-family: sans-serif;
+    margin: 0 0 10px 0;
+}
+.ourgallery{
+    font-family:monospace;
+    width: 100%;
+    padding-top: 70px;
+    text-align: center;
+    background-image:linear-gradient(darkturquoise,azure);
+    margin-top: 30px;
+}
+.sunimg{
+    position: absolute;
+}
+.gallery{
+    padding-bottom: 50px;
+    
+}
+table img:hover{
+                border: 2px solid #10a124;
+            }
+
+.button{
+    padding-bottom: 60px;
+}
+/* Footer CSS */
+.contactinfo{
+    padding: 20px;
+    padding-left: 0;
+    padding-right: 0;
+    text-align: center;
+    height: 110px;
+    color: black;
+    width:100%;
+    display: table;
+    font-weight: bolder;
+    font-family: sans-serif;
+    background-color: #fff;
+}
+.contact{
+    padding: 8px;
+    width: 32%;
+    float: left;
+    overflow: hidden;
+        
+
+}
+.Ftitle{
+    color: #10a124;    
+}
+.Ftitle1{
+    color: #ee559e;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+.sicon{
+    border-radius: 50%;
+    max-width: 42px;
+    height: 40px;
+}
+.footer_bottom{
+    margin: 0;
+    height: 50px;
+    padding-top: 15px;
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 14px;
+    color: white;
+    background: #10a124;
+}
+#toggle{
+    display:none;
+    transform: rotate(0deg);
+    transition: 1s;
+}
+.btn{
+    margin-bottom: 40px;
+}
+
+
+
+@media only screen and (max-width: 768px) {
+    header{
+        background-size:100% 360px;
+        height: 360px;
+    }
+     #picslider{
+        margin-top: 90px; 
+    }
+    #toggle{
+            width: auto;
+            display: block;
+            color: white;
+            font-size: 3em;
+            position: absolute;
+            right: 20px;
+            top: 20px;
+    }
+
+            #toggle::after{
+                    content:'menu';
+            }
+            nav ul{
+            font-size: 1.5em;
+            padding:0;
+            width: 100%;
+            margin: 0;
+            background-color: white;
+            position:absolute;
+            top:100%;
+            left: 0;
+            flex-direction: column; 
+            transform:translate(-100%); 
+            transition:transform 1s;  
+            opacity: 0.9;
+            color: black;
+            }
+            nav{
+                position: absolute;
+                top: 0px;
+                height: 90px;
+                background-color:black;
+                margin: 0;
+                padding:0;
+                background-color: black;
+
+            }
+            nav ul li a{
+                display: block;
+                text-align: center;
+                width:100%;
+                margin:10px 0 20px 0;
+                font-size: 14px;
+                color: black;
+                
+            }
+            .show{
+                padding: 0;
+                margin: 0;
+                transform:translate(0%);
+            }
+            .show + #toggle{
+                transform: rotate(360deg);
+
+            }
+            .show + #toggle:after{
+                content:'close';
+            }
+            nav img{
+                position: absolute;
+                top: 10px;
+                left: 10px;
+            }
+            
+
+
+            .aboutninos-img1{
+                width: 140px;
+                position: absolute;
+                left: 5px;
+                padding-top: 190px;
+            }
+                .aboutninos{
+                    padding: 0px;
+                    max-height:790px;
+                }
+             .ourprograms h1{
+                    margin-bottom: 0px;
+                }
+            .aboutninos-img2{
+                width: 130px;
+                position: absolute;
+                right: 0px;
+                transform: rotate(270deg)
+            }
+                .aboutninos-text{
+                position: static;
+                min-width: 200px;
+                padding-left: 120px;
+                padding-right: 120px;    
+                font-size: 1.2em;
+            }
+                h1{
+                    padding: 0px;
+                    margin-top: 0px;
+                }
+                table tr{
+                    display: flex;
+                    flex-direction: column;
+                    font-size: 2em;
+                }
+                table td{
+                    padding-top: 30px;
+                }
+                table img{
+                    width: 50%;
+                    height: 250px;
+                }
+                .imgdiscription{
+                    font-size: 0.8em;
+                }
+                .gallery{
+                    width: 600px;
+                }
+                .sunimg{
+                    height: 200px;
+                }
+                body{
+                     min-width:0;
+                } 
+                .btn{
+                    margin-bottom: 40px;
+                }
+            .contactinfo{
+                    height: auto;
+                    padding: 0;
+                    padding-bottom: 15px;
+                }
+                .contact{
+                    text-align: center;
+                    width: 100%;
+                    padding: 0;
+                    margin: 0;
+                }
+                .Ftitle{
+                    display: none;
+                }
+                .Ftitle1{
+                    display: none;
+                }
+                .footer_bottom{
+                    height: auto;
+                    padding: 10px;
+                    }
+            }    
